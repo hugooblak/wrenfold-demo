@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wf-bench/spec-table",
+	"version": "1.2.0",
+	"title": "Specification table",
+	"category": "widgets",
+	"icon": "editor-table",
+	"description": "A small table of standard sizes.",
+	"textdomain": "bench-addons",
+	"supports": { "html": false, "spacing": { "margin": true } },
+	"render": "file:./render.php"
+}

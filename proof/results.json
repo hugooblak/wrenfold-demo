@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-20",
+  "demo": "wrenfold",
+  "results": [
+    {
+      "name": "1. Markup lint",
+      "ok": true,
+      "details": "clean"
+    },
+    {
+      "name": "2. Pages load",
+      "ok": true,
+      "details": "9 pages"
+    },
+    {
+      "name": "3. Link crawl",
+      "ok": true,
+      "details": "26 URLs checked"
+    },
+    {
+      "name": "4. Editor: no invalid blocks",
+      "ok": true,
+      "details": "13 posts/pages, 19 patterns, all templates"
+    },
+    {
+      "name": "5. Editor font sizes = live site",
+      "ok": true,
+      "details": "25 text elements compared"
+    },
+    {
+      "name": "6. Accessibility (axe, WCAG 2.2 AA)",
+      "ok": true,
+      "details": "9 pages × 2 widths, 0 violations"
+    },
+    {
+      "name": "7. Keyboard",
+      "ok": true,
+      "details": "skip link, focus outline, FAQ, mobile menu"
+    },
+    {
+      "name": "8. Forms",
+      "ok": true,
+      "details": "1 forms: every field labelled (CF7: errors shown)"
+    },
+    {
+      "name": "9. Layout 320–1440px",
+      "ok": true,
+      "details": "no overflow, header fits"
+    },
+    {
+      "name": "10. Lighthouse (mobile)",
+      "ok": true,
+      "details": "/ 97/100/100/100  /what-we-make/ 99/100/100/100  /about/ 99/100/100/100  /faqs/ 99/100/100/100  /contact/ 98/100/100/100  /site-health-report/ 99/100/100/100"
+    },
+    {
+      "name": "11. Screenshots",
+      "ok": true,
+      "details": "24 saved to proof/screenshots"
+    }
+  ],
+  "lighthouse": [
+    {
+      "page": "/",
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.4 s",
+      "cls": "0"
+    },
+    {
+      "page": "/what-we-make/",
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.1 s",
+      "cls": "0"
+    },
+    {
+      "page": "/about/",
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.0 s",
+      "cls": "0"
+    },
+    {
+      "page": "/faqs/",
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.0 s",
+      "cls": "0"
+    },
+    {
+      "page": "/contact/",
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.3 s",
+      "cls": "0"
+    },
+    {
+      "page": "/site-health-report/",
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "lcp": "2.0 s",
+      "cls": "0"
+    }
+  ]
+}

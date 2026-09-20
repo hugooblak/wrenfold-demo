@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wf-bench/team-card",
+	"version": "1.2.0",
+	"title": "Team card",
+	"category": "widgets",
+	"icon": "id",
+	"description": "A card for one person.",
+	"textdomain": "bench-addons",
+	"supports": { "html": false },
+	"render": "file:./render.php"
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wf-timberkit/price-list",
+	"version": "1.0.0",
+	"title": "Price list",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "A list of prices.",
+	"textdomain": "timberkit-blocks",
+	"supports": { "html": false },
+	"render": "file:./render.php"
+}

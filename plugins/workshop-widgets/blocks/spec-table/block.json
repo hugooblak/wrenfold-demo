@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wf-workshop/spec-table",
+	"version": "1.0.0",
+	"title": "Spec table",
+	"category": "widgets",
+	"icon": "editor-table",
+	"description": "A table of sizes.",
+	"textdomain": "workshop-widgets",
+	"supports": { "html": false },
+	"render": "file:./render.php"
+}

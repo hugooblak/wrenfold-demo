@@ -1,0 +1,12 @@
+/*
+ * Workshop Widgets front-end styles.
+ *
+ * Loaded on every page view, whether or not any of this pack's blocks are on
+ * the page. That is how most add-on packs and slider plugins behave, and it is
+ * what the "loads a file on every page view" check is written to find.
+ */
+.wf-addon-note {
+	margin: 1rem 0;
+	padding: 0.75rem 1rem;
+	border-left: 3px solid currentColor;
+}

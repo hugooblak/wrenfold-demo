@@ -1,0 +1,122 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Wrenfold Joinery: WordPress recovery and hardening demo",
+		"description": "A small joinery business site plus Site Triage: an admin toolkit that audits security leftovers, add-on plugin bloat, mixed page builders and mobile problems by reading the live install.",
+		"author": "hugooblak",
+		"categories": [
+			"Tools"
+		]
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "theme/wrenfold"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "plugins/wrenfold-faq"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "plugins/wrenfold-triage"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "plugins/bench-addons"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "plugins/workshop-widgets"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/hugooblak/wrenfold-demo",
+				"ref": "main",
+				"refType": "branch",
+				"path": "plugins/timberkit-blocks"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "contact-form-7"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/wrenfold-setup.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hugooblak/wrenfold-demo/main/content/setup.php"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/wp-content/wrenfold-setup.php';"
+		}
+	]
+}

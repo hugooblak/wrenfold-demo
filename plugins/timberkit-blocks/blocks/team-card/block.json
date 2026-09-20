@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wf-timberkit/team-card",
+	"version": "1.0.0",
+	"title": "Team card",
+	"category": "widgets",
+	"icon": "id",
+	"description": "A card for one person.",
+	"textdomain": "timberkit-blocks",
+	"supports": { "html": false },
+	"render": "file:./render.php"
+}

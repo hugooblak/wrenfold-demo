@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wrenfold/health-report",
+	"version": "1.0.0",
+	"title": "Site health report",
+	"category": "widgets",
+	"icon": "shield-alt",
+	"description": "Shows the result of the last Site Triage scan, written for someone who does not work on websites.",
+	"keywords": [ "health", "scan", "security", "report" ],
+	"textdomain": "wrenfold-triage",
+	"attributes": {
+		"show": { "type": "string", "default": "all" }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide" ],
+		"spacing": { "margin": true, "padding": true }
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

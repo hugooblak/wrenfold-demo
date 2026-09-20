@@ -1,0 +1,45 @@
+/* FAQ list block. Loaded only on pages that use the block. */
+.wf-faq {
+	border-bottom: 1px solid var(--wp--preset--color--line, #d9d4c7);
+}
+.wf-faq:first-child {
+	border-top: 1px solid var(--wp--preset--color--line, #d9d4c7);
+}
+
+.wf-faq__question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.1rem 0.25rem;
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--large, 1.2rem);
+	line-height: 1.35;
+	cursor: pointer;
+	list-style: none;
+}
+.wf-faq__question::-webkit-details-marker { display: none; }
+
+/* Plus sign that turns into a minus when open. Pure CSS. */
+.wf-faq__question::after {
+	content: "+";
+	content: "+" / ""; /* Empty alt text: screen readers skip the icon. */
+	flex: none;
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--surface, #f4f1ea);
+	font-size: 1.35rem;
+	font-weight: 500;
+	line-height: 1;
+}
+.wf-faq[open] > .wf-faq__question::after { content: "\2212"; content: "\2212" / ""; }
+
+.wf-faq__answer {
+	padding: 0 0.25rem 1.25rem;
+	max-width: 65ch;
+}
+.wf-faq__answer > :first-child { margin-top: 0; }
+.wf-faq__answer > :last-child { margin-bottom: 0; }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" role="img" aria-hidden="true" focusable="false">
+  <rect width="520" height="480" fill="#F7F3ED"/>
+  <g stroke="#2A211A" stroke-width="3" stroke-linejoin="round">
+    <path d="M60 128h190v54H60z" fill="#C88A4E"/>
+    <path d="M250 128h34v54h-34z" fill="#A9703B"/>
+    <path d="M318 128h34v54h-34z" fill="#A9703B"/>
+    <path d="M386 128h34v54h-34z" fill="#A9703B"/>
+    <path d="M284 128h34v54h-34zM352 128h34v54h-34zM420 128h40v54h-40z" fill="#E4C79E"/>
+    <path d="M60 182h400v132H60z" fill="#D8AE79"/>
+  </g>
+  <g stroke="#2A211A" stroke-width="3" stroke-linecap="round" opacity="0.45">
+    <path d="M92 210h336M92 244h336M92 278h250"/>
+  </g>
+  <g stroke="#2A211A" stroke-width="3" stroke-linejoin="round">
+    <path d="M60 336h400v26H60z" fill="#8A3A17"/>
+    <path d="M96 362h22v66H96zM402 362h22v66h-22z" fill="#46372B"/>
+  </g>
+  <g fill="none" stroke="#8A3A17" stroke-width="3" stroke-linecap="round">
+    <path d="M60 96h400"/>
+    <path d="M60 88v16M460 88v16"/>
+  </g>
+  <circle cx="470" cy="86" r="14" fill="#E8B54B" stroke="#2A211A" stroke-width="3"/>
+</svg>

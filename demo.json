@@ -1,0 +1,53 @@
+{
+	"name": "Wrenfold Joinery",
+	"slug": "wrenfold",
+	"prefix": "wf",
+	"github_user": "hugooblak",
+	"github_repo": "wrenfold-demo",
+	"playground_url": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/hugooblak/wrenfold-demo/main/blueprint.json",
+	"platform": "wordpress",
+	"industry": "Joinery and fitted furniture (kitchens, staircases, shopfitting)",
+	"site_type": "Recovery and hardening demo: a small business site plus a Site Triage toolkit that audits security, plugin bloat, page builders and mobile problems",
+	"features": [
+		"Site Triage plugin: eight admin screens, six of them filled by reading the live install when you press the button",
+		"security scan: runnable PHP in uploads, scheduled jobs with no code behind them, recently created administrator accounts, open registration, stray files in the WordPress folder, hidden links to other domains in content, the built-in file editor, XML-RPC, uploads folder listing, autoloaded settings size, dormant plugins and themes, debug output, stylesheets asked for but missing, plugins that load a file on every page view while barely being used",
+		"every finding that needs action shows severity, the evidence it was based on, the cause, and the fix",
+		"plugin audit reads each plugin's own files for the blocks, shortcodes AND Elementor widgets it registers, so an Elementor add-on pack is not written off as adding nothing",
+		"Elementor widget usage counted inside each page's stored _elementor_data, not just in page text",
+		"usage counted across every page, post, template, pattern, menu and saved section, drafts included",
+		"no verdict at all on a plugin too large to read in full: an unread file is not the same as an unused plugin",
+		"overlap report: features provided by more than one add-on pack, with a keep or remove verdict per plugin",
+		"the slider-plugin question: which plugins ask for a file on every single page view while being used on one page or none",
+		"builder inventory reads the fields Elementor, BeBuilder, Divi, WPBakery, SiteOrigin and Beaver Builder leave behind, including pages whose layout lives in that data and whose page text is empty",
+		"tells apart a builder that draws a page from one that only left data behind, and counts both",
+		"standardise-or-not recommendation computed from those counts",
+		"mobile audit: fixed pixel widths, minimum widths, text that cannot wrap, text under 13px, images that reserve no space, tables with no way to scroll",
+		"unstyled button diagnosis: a labelled mock-up of the two states, an ordered way to find the cause, and a real check of every stylesheet and script registered under wp-content against the disk",
+		"seven fixes, each one button, each logged, each reversible from the log",
+		"fix log with who, what, when and undo",
+		"an honesty screen listing every problem planted on purpose, so no finding is mistaken for theatre",
+		"public site health report page built from the last scan, with the evidence deliberately held back: no account names, file paths or plugin versions published",
+		"three demo add-on packs that overlap on purpose, one of which loads a stylesheet on every page view and is used nowhere",
+		"business site: home, what we make, the workshop, questions, ask for a quote, plus workshop notes and a privacy page",
+		"quote request form with labelled fields and error messages",
+		"FAQ library the team manages in the admin, grouped by topic, no JavaScript",
+		"reusable block patterns, editor notes explaining each section",
+		"WCAG 2.2 AA tested, no front-end JavaScript beyond the menu and the form"
+	],
+	"upwork_job_id": "2101477512725404266",
+	"pages": [
+		"/",
+		"/what-we-make/",
+		"/about/",
+		"/faqs/",
+		"/contact/",
+		"/site-health-report/",
+		"/blog/",
+		"/privacy-policy/",
+		"/nope/"
+	],
+	"plugins_from_wporg": [
+		"contact-form-7"
+	],
+	"copied_from": "starter"
+}
