@@ -445,8 +445,14 @@ function wrenfold_triage_stray_root_files() {
 		'wp-signup.php', 'wp-trackback.php', 'xmlrpc.php',
 	);
 	$strays = array();
-	foreach ( (array) glob( ABSPATH . '*.{php,phtml,php5,php7,phar}', GLOB_BRACE ) as $path ) {
+	// GLOB_BRACE is not defined in every PHP build - Playground's PHP 8.3 does not have it,
+	// and an undefined constant is a fatal error in PHP 8, which killed the whole scan.
+	// Plain glob plus a filter does the same job everywhere.
+	foreach ( (array) glob( ABSPATH . '*' ) as $path ) {
 		$name = basename( $path );
+		if ( ! is_file( $path ) || ! preg_match( '/\.(php|phtml|php5|php7|phar)$/i', $name ) ) {
+			continue;
+		}
 		if ( ! in_array( $name, $known, true ) ) {
 			$strays[] = $name . ' (' . size_format( (int) filesize( $path ) ) . ', ' . __( 'changed', 'wrenfold-triage' ) . ' ' . gmdate( 'j M Y', (int) filemtime( $path ) ) . ')';
 		}
